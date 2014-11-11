@@ -201,7 +201,7 @@
 }
 
 #currentpane, #searchpane, #albumspane, #artistspane, #streampane {
-    display: none; 
+    display: none;
 }
 
 
@@ -242,7 +242,7 @@
     background-color: #F8F8F5;
     border: 1px solid  #CECECE;
     border-bottom: 0;
-    padding: 0;
+    /*padding: 0;*/
 }
 
 .table {
@@ -283,6 +283,10 @@
     background-color: #ddd !important;
 }
 
+#playlistslist li {
+    padding: 5px;
+}
+
 #playlistslist li a {
     padding: 7px;
 }
@@ -294,7 +298,7 @@
 }
 
 .albumli {
-    padding-left: 5px;
+    padding: 5px;
 }
 
 .playlistactive {
@@ -315,7 +319,7 @@
     background-position: 4px 51%;
 }
 .currenttrack {
-    background-image: url('../images/icons/play_alt_16x16.png'); 
+    background-image: url('../images/icons/play_alt_16x16.png');
     background-repeat: no-repeat;
     background-color: #eee;
     background-position: 4px 50%;
@@ -407,8 +411,8 @@
 /*dont hide clear buttons in text input */
 .ui-input-clear-hidden {
     display:block !important;
-}    
-  
+}
+
 
 /***************
  *  common use

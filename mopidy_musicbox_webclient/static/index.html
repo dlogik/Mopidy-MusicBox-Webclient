@@ -8,7 +8,7 @@
 <!--    <script type='application/javascript' src='js/fastclick.js'></script> -->
     <script>
      //configuration
-//     var wsLocation = location.host + ':6680';  //for normal operation of mopidy http
+     //var wsLocation = location.host + ':6680';  //for normal operation of mopidy http
       var wsLocation = location.host;   //for running on port 80
       if (wsLocation == location.hostname) {
           wsLocation = location.hostname + ':6680';
@@ -68,7 +68,7 @@
 
 <body>
 <div data-role="page" id="page" class="ui-responsive-panel" data-theme="c">
-<div data-role="panel" id="panel" data-position="left" data-theme="a" data-display="reveal" data-position-fixed="true">
+<div data-role="panel" id="panel" data-position="left" data-theme="a" data-display="overlay" data-position-fixed="true">
 
 
     <ul class="ui-listview mainNav" data-role="listview" data-theme="a">
@@ -148,18 +148,24 @@
 <div data-role="popup" data-transition="none" data-theme="c" id="popupTracks">
     <div data-role="collapsible-set">
         <ul data-role="listview" data-icon="false" id="popupTracksLv">
-            <li>
-                <a href="#" onclick="return playTrack();">Play <span class="popupTrackName"></span></a>
+            <li class="addqueue">
+                <a href="#" onclick="return playTrack(PLAY_NOW);">Play Now</a>
             </li>
             <li class="addqueue">
                 <a href="#" onclick="return playTrack(PLAY_NEXT);">Play Track Next</a>
             </li>
             <li class="addqueue">
-                <a href="#" onclick="return playTrack(ADD_THIS_BOTTOM);">Add Track to Bottom of Queue</a>
+                <a href="#" onclick="return playTrack(REPLACE_PLAY);">Replace and Play</a>
+            </li>
+            <li class="addqueue">
+                <a href="#" onclick="return playTrack(PLAY_ALL_NEXT);">Play All Next</a>
             </li>
             <li class="addqueue">
                 <a href="#" onclick="return playTrack(ADD_ALL_BOTTOM);" id="liaddtobottom">Add all to Bottom of
                     Queue</a>
+            </li>
+            <li class="addqueue">
+                <a href="#" onclick="return playTrack(REPLACE_ALL_PLAY);">Replace and Play All</a>
             </li>
             <li>
                 <a href="#" onclick="showAlbumPopup('#popupTracks')">Show Album <span class="popupAlbumName"></span></a>

@@ -14,6 +14,10 @@ var mopidy;
 
 //values for controls
 var play = false;
+
+// Queue track by default.
+var queuebydefault = true;
+
 var random;
 var repeat;
 var currentVolume = -1;
@@ -68,6 +72,9 @@ PLAY_NOW = 0;
 PLAY_NEXT = 1;
 ADD_THIS_BOTTOM = 2;
 ADD_ALL_BOTTOM = 3;
+PLAY_ALL_NEXT = 4;
+REPLACE_PLAY = 5;
+REPLACE_ALL_PLAY = 6;
 
 MAX_TABLEROWS = 50;
 
