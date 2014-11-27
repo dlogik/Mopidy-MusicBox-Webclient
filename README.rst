@@ -14,7 +14,7 @@ With Mopidy MusicBox Webclient, you can play your music on your computer (`Rapsb
 
 This is a responsive webclient especially written for Mopidy, a music server. Responsive, so it works on desktop and mobile browsers. You can browse, search and play albums, artists, playlists, and it has cover art from Last.fm.
 
-`Mopidy <http://www.mopidy.com/>`_ is a music server which can play music from Spotify, Google Music, SoundCloud, etc or from your hard drive. 
+`Mopidy <http://www.mopidy.com/>`_ is a music server which can play music from Spotify, Google Music, SoundCloud, etc or from your hard drive.
 
 If you want to run Mopidy with this webclient on a Raspberry Pi, do yourself a favor and use my custom built SD-image: `Pi MusicBox <http://www.woutervanwijk.nl/pimusicbox/>`_.
 
@@ -53,16 +53,22 @@ Project resources
 Changelog
 =========
 
-v1.0.2 Dev
+v1.0.4
+-------------------
+
+- Added AudioAddict icon
+- Bugfixes of course
+
+v1.0.2
 -------------------
 
 - A friendlier welcome with a home page with buttons to the most used functions
 - Converted Radio Stations to Streams, so user can add streams for youtube, spotify, soundcloud, podcasts
-- Improved radio/streams interface
-- Better handling of coverart
+- Enhanced radio/streams interface
 - Search: select service to search
-- Youtube icons added
 - Fixed single quote bug #39
+- Better handling of coverart
+- Youtube icons added
 - Bugfixes (search, popups, etc)
 
 v1.0.1 (20-9-2014)

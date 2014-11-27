@@ -131,7 +131,7 @@ function playTrack(addtoqueue) {
                     });
                 });
             return false;
-    };
+    }
     return false;
 }
 
@@ -154,6 +154,10 @@ function playTrackByUri(track_uri, playlist_uri) {
         console.log('Failed to play selected track ', track_uri);
     }
 
+    // Stop directly, for user feedback
+    //mopidy.playback.stop(true);
+    //mopidy.tracklist.clear();
+
     //this is deprecated, remove when popuptracks is removed completly
     $('#popupTracks').popup('close');
     $('#controlspopup').popup('close');
@@ -173,7 +177,7 @@ function playTrackByUri(track_uri, playlist_uri) {
         func.then(
             function(tltracks) {
                 //check if tltracks is filled, some backends (gmusic) do not support adding by uri, it seems
-                if (tltracks.length == 0) {
+                if (tltracks.length === 0) {
                     var tracks = getTracksFromUri(playlist_uri);
                     mopidy.tracklist.add(tracks).then(findAndPlayTrack);
                 }
@@ -310,7 +314,7 @@ function backbt() {
 
 function setRepeat(nwrepeat) {
     if (repeat == nwrepeat) {
-        return
+        return;
     }
     if (!nwrepeat) {
         $("#repeatbt").attr('style', 'color:#2489ce');

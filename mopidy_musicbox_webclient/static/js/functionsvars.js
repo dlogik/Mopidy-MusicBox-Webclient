@@ -85,10 +85,11 @@ TRACK_TIMER = 1000;
 STATUS_TIMER = 10000;
 
 // the first part of Mopidy extensions which serve radio streams
-var radioExtensionsList = ['somafm', 'tunein', 'dirble'];
+var radioExtensionsList = ['somafm', 'tunein', 'dirble', 'audioaddict'];
 
 var uriClassList = [
     ['spotify', 'fa-spotify'],
+    ['spotifytunigo', 'fa-spotify'],
     ['local', 'fa-file-sound-o'],
     ['podcast', 'fa-rss-square'],
     ['dirble', 'fa-microphone'],
@@ -100,11 +101,13 @@ var uriClassList = [
     ['somafm', 'fa-flask'],
     ['youtube', 'fa-youtube'],
     ['yt', 'fa-youtube'],
+    ['audioaddict', 'fa-bullhorn'],
     ['subsonic', 'fa-folder-open']
 ];
 
 var uriHumanList = [
     ['spotify', 'Spotify'],
+    ['spotifytunigo', 'Spotify Browse'],
     ['local', 'Local Files'],
     ['podcast', 'Podcasts'],
     ['dirble', 'Dirble'],
@@ -114,6 +117,7 @@ var uriHumanList = [
     ['internetarchive', 'Internet Archive'],
     ['somafm', 'Soma FM'],
     ['youtube', 'YouTube'],
+    ['audioaddict', 'AudioAddict'],
     ['subsonic', 'Subsonic']
 ];
 
