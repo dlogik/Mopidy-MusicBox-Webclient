@@ -253,10 +253,10 @@ function removeTrack() {
 }
 
 function clearQueue() {
-    mopidy.playback.stop();
-    resetSong();
+//    mopidy.playback.stop();
+//    resetSong();
     mopidy.tracklist.clear();
-    resetSong();
+//    resetSong();
     return false;
 }
 
